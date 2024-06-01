@@ -7,14 +7,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  background-color: coral;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +36,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.StudentList {
+  text-align: center;
+}
+
+.StudentList table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.StudentList th, .StudentList td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Alternating row colors */
+.StudentList tbody tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+.StudentList tbody tr:nth-child(even) {
+  background-color: darkgreen;
+  color: white; 
+}
+
+
+.Essay {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Essay h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Essay p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+.Essay p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.Essay p:last-child {
+  font-style: italic;
+}
+
+
+.Essay a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+.CarList {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.CarList h1 {
+  margin-bottom: 20px;
+}
+
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.car h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.car p {
+  margin: 5px 0;
+  color: #555;
 }
